@@ -1,0 +1,31 @@
+{
+  "name": "telegram-ai-manager",
+  "version": "1.0.0",
+  "description": "AI-powered Telegram Manager Assistant for Casino Channel",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "train": "ts-node src/tools/train-bot.ts"
+  },
+  "keywords": [
+    "telegram",
+    "ai",
+    "assistant",
+    "casino"
+  ],
+  "author": "Bilal Hüseynov",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "dotenv": "^16.3.1",
+    "telegram": "^2.2.7",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "nodemon": "^3.0.2",
+    "typescript": "^5.3.3"
+  }
+}
